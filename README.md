@@ -1,24 +1,35 @@
-# README
+🔧 Configuration
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Entrez les commandes suivantes dans votre terminal préféré :
 
-Things you may want to cover:
+bundle install
 
-* Ruby version
+Database creation
 
-* System dependencies
+rails db:migrate
 
-* Configuration
+Database initialisation
 
-* Database creation
+rails db:seed
 
-* Database initialization
+rails c
 
-* How to run the test suite
+🔥 Démarrage
 
-* Services (job queues, cache servers, search engines, etc.)
+Une fois dans la console Rails (rails c) vous pourrez explorer les tables de données suivantes avec la commande tp de la gem table_print (installée grâce au Gemfile présent lors du bundle install) :
 
-* Deployment instructions
+tp User.all
 
-* ...
+tp City.all
+
+tp Gossip.all
+
+tp Tag.all
+
+Test des views
+
+Lancer le server avec 'rails s'
+
+Allez sur le lien http://localhost:3000/
+
+Tester les différentes pages.
